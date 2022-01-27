@@ -1,0 +1,91 @@
+#Portfolio{
+    width: 100%;
+    height: 1145px;
+    background-color: #fafafa;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.content-port{
+    width: 1170px;
+    height: 905px;
+    margin: 120px 366px;
+}
+.content-port div{
+    width: 390px;
+    height: 386px;
+    float: left;
+    position: relative;
+}
+.content-port div img{
+    width: 350px;
+    height: 346px;
+    padding: 20px;
+}
+/* creat div black*/
+.content-port .work:hover::before{
+    content: "";
+    width: 390px;
+    height: 386px;
+    position: absolute;
+    transition: all;
+    transition-duration:0.3s;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.content-port div .work-content{
+    width: 350px;
+    height: 125px;
+    position: absolute;
+    top: 19%;
+    left: 20px;
+    padding-top: 70px;
+    visibility: hidden;
+}
+.content-port div:hover .work-content{
+    visibility: inherit;
+} 
+
+/* transfor; work-content */
+.content-port div .work-content .span{
+    color: #6195FF;
+    margin: 10px 128px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    width: 93px;
+    height: 17px;
+}
+.content-port div:hover .work-content .span{ 
+    transform: translateY(-30px);
+    transition-duration:.2s;
+}  
+ 
+.content-port div:hover .work-content h3{ 
+    text-align: center;
+    transform: translateY(-30px);
+    transition-duration:.4s;
+    color: white;
+}  
+.content-port div:hover .work-content .link{ 
+    transform: translateY(-30px);
+    transition-duration:.6s;
+}  
+.content-port div .work-content .link{
+    width: 104px;
+    height: 50px;
+    overflow: hidden;
+    margin: 17px 123px 0;
+}
+.content-port div .work-content .link a{
+    font-size: 16px;
+    background-color: #6195FF;
+    float: right;
+    width: 50px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+} 
+.content-port div .work-content .link a:first-child{
+    margin-left: 4px;
+}

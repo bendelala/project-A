@@ -1,0 +1,174 @@
+@import url("style-about.css");
+@import url("style-Portfolio.css");
+@import url("style-Services.css");
+body{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.home{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+} 
+
+.home > img{  
+    margin: 0;                                           
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.opacity-home{               /* creat div black above img */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 1;
+}
+
+.home-content{
+    position: absolute;
+    width: 1170px;
+    height: 100vh;
+    margin: 0 366px;
+    top: 0px;
+    z-index: 2;
+}
+
+/* created nav (logo + lists + line home fixed + line lists + creat blog post ) */
+/* created logo + lists */
+nav{
+    height: 52px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    background-color: rgb(0, 0, 0 ,0.1);
+}
+nav [alt=logo]{
+    max-height: 50px;
+    margin-left:366px ;
+}
+nav ul{
+    margin-right:366px ;
+    float: right;
+}
+nav ul li{
+    display: inline;
+    position: relative;
+}
+a{                              /*stondar style a */
+    text-decoration: none;
+    text-align: center;
+}
+nav ul li a{
+    color: white;
+    font-size: 16px;
+    margin: 0 15px ;
+    text-align: center;
+}
+
+/* creat line lists */
+nav ul li a::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    transition: width .3s;
+    top: 20px;
+} 
+ul :nth-child(1) a::before{         /* line home fixed */
+    width: 45px;
+    background-color: #6195FF;
+} 
+ul :nth-child(2) a:hover::before,ul :nth-child(5) a:hover::before{
+    width: 45px;
+}
+ul :nth-child(3) a:hover::before,ul :nth-child(4) a:hover::before{
+    width: 61px;
+}
+ul :nth-child(6) a:hover::before,ul :nth-child(7) a:hover::before{
+    width: 36px;  
+}
+ul :nth-child(8) a:hover::before{
+    width: 58px;
+} 
+nav ul li a:hover::before{
+    transition-timing-function: linear;
+    background-color: #6195FF;
+} 
+
+/* creat blog post */
+ul :nth-child(7)::after{
+    content: "blog post";
+    width: 180px;
+    height: 35px;
+    color: white;
+    position: absolute;
+    left: -65px;
+    top: 60px;
+    padding: 7px 0px 0px 15px;
+    background-color: #6195FF;
+    text-align: left;
+    transition: all;
+    transition-duration:0.3s;
+    visibility: hidden;
+} 
+ul :nth-child(7):hover::after{
+    visibility: initial;
+    transform: translateY(-20px);
+}
+ul :nth-child(7){                /*   creat long padding ll list bach t9d thba6 ll blog post bla m yrouh   */
+    padding-bottom: 20px;
+}
+
+/* creat content home (h1 + p + button) */
+.content{
+    width: 945px;
+    height: 213.2px;
+    margin: 362px auto;
+}
+.home h1{
+    font-size: 54px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+.home p{
+    color: white;
+    text-align: center;
+    margin: -15px 0px 30px;
+    letter-spacing: 0.7px;
+    line-height: 1.8;
+}
+
+.home .button{
+    padding: 0px 300px;
+}
+.home .button button{
+    width: 165.85px;
+    height: 49.6px;
+    border-radius:5px ;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button .blue ,.home .button :last-child a{
+    background-color: #6195FF;
+    margin-left: 7px;
+    color: white;
+}
+.home .button :first-child a {
+    margin-right: 7px;
+    color: black;
+}
+
+button:hover,li:hover,[alt=logo]:hover{    
+    opacity: 0.8;
+}
+
