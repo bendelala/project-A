@@ -1,0 +1,165 @@
+#team{
+    height: 720px;
+    margin-top: 556px;
+}
+#team .content-team{
+    width: 1170px;
+    height: 600px;
+    margin:  auto;
+}
+#team .content-team h2{
+    margin-bottom: 95px;
+}
+#team .content-team .list-team{
+    display: flex;
+    justify-content: space-between;
+}
+#team .content-team .item{
+    width: 31.5%;
+    height: 447px;
+    background-color: #F4F4F4;
+    position: relative;
+    z-index: 2;
+}
+#team .content-team .item::before{
+    left: 25px;
+    content: "asdsad";
+    width: 320px;
+    height: 285px;
+    background-color: #1C1D21;
+    opacity: 0;
+    position: absolute;
+    top: 40px;
+}
+#team .content-team .item img{
+    width: 320px;
+    height: 285px;
+    padding: 40px 25px 0px;
+}
+
+#team .content-team .item h3{
+    margin: 7px 0px 3px;
+}
+#team .content-team .item span{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #868F9B;
+    line-height: 2;
+    padding-left:130px ;    
+}
+
+
+#team .content-team .item .black{
+    width: 369px;
+    height: 0px;
+    background-color: black;
+    opacity: .9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: height .2s; 
+    z-index:-1;
+}
+#team .content-team .item:hover .black{
+    height: 447px;
+}
+#team .content-team .item:hover::before{
+    opacity: .7;
+}
+ /* #team .content-team .item:hover{
+    b
+}  */
+#team .content-team .item:hover h3{
+    color:white;
+}
+#team .content-team .item:hover span{
+    color:#6195FF;
+}
+#team .content-team .item:hover .list-icons{
+    opacity: .9;
+}
+
+/* #team .content-team .item .cont{
+    position: absolute;
+    z-index: 10;
+} */
+/* #team .content-team .item::before{
+    content: "";
+    width: 368.8px;
+    height: 0px;
+    background-color: #1C1D21;
+    opacity:.9;
+    position: absolute;
+    top: 0;
+    transition:all;
+    transition-duration:.2s ;
+ 
+}
+#team .content-team .item:hover::before{
+    height: 447px;
+}
+#team .content-team .item:hover h3{
+    color: white;
+}
+#team .content-team .item:hover span{
+    color: red;
+} */
+
+
+
+
+#team .content-team .item  .list-icons{
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+    /* top: 40px; */
+    /* right: 23.7px; */
+    margin: -364px 0px 0px 295px;
+    opacity: 0;
+
+}
+
+/* #team .content-team .item .list-icons .icon{
+    width: 50px;
+    height: 50px;
+    background-color:#6195FF;
+    opacity: 0;
+} */
+#team .content-team .item .list-icons a{
+    width: 50px;
+    height: 50px;
+    background-color:#6195FF;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    opacity: .9;
+}
+#team .content-team .item .list-icons a::before{
+    content: "";
+    width: 51px;
+    height: 0;
+    background-color: #1C1D21;
+    opacity:.2;
+    position: absolute;
+    right: 22.7px;
+}
+/* #team .content-team .item:hover::before{
+    height: 447px;
+} */
+
+/* #team .content-team .item .list-icons .icon::before{
+    content: "";
+    width: 50px;
+    height: 0px;
+    background-color: #1C1D21;
+    opacity:.2;
+    position: absolute;
+} */
+#team .content-team .item .list-icons a:hover::before{
+    height: 50px;
+}
+#team .content-team .item .list-icons .icon i{
+    font-size: 16px;
+    color: white;
+    padding: 15px 19px;
+}

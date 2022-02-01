@@ -25,14 +25,14 @@
     position: absolute;
     top: -1px;
     left: -1px;
-    background-color: black;
+    background-color: #1C1D21;
     transition: all;
     transition-duration: 0.2s;
 }
 .content-serv div:hover::before{
     width: 360px;
     height: 211px;
-    background-color: black;
+    background-color: #1C1D21;
     opacity: 0.9;
     position: absolute;
     top: -1px;

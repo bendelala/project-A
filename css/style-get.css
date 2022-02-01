@@ -1,0 +1,77 @@
+#get{
+    width: 100%;
+    height: 837px;
+}
+#get .content-get{
+    width: 1170px;
+    height: 597px;
+    /* background-color: red; */
+    margin: auto;
+    padding-top: 120px;
+}
+#get .content-get .list-item{
+    display: grid;
+    /* background-color: skyblue; */
+    grid-template-columns:repeat(6,1fr) ;
+    grid-template-rows: repeat(3,1fr);
+}
+#get .content-get .list-item div{
+   grid-column: span 2;
+}
+#get .content-get .list-item div i{
+    font-size: 30px;
+    color: #6195FF;
+    margin-left: 182px;
+}
+#get .content-get .list-item div p{
+    font-family: 'Varela Round',sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #868f9b;
+    text-align: center;
+}
+#get .content-get .list-item div:last-child{
+    grid-column: span 4;
+    grid-area: 2/2/4/6;
+    /* background-color: slategrey; */
+ }
+ #get .content-get .list-item div:last-child input{
+    height: 40px;
+    width: 48%;
+    background: #F4F4F4;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #354052;
+    border: none;
+    opacity: .7;
+ }
+ #get .content-get .list-item div:last-child input:nth-child(2){
+     margin-left: 10px;
+ }
+ #get .content-get .list-item div:last-child input:nth-child(3){
+    width:98.9%;
+    margin: 20px 0px;
+}
+#get .content-get .list-item div:last-child  textarea{
+    width:98.9%;
+    /* height: 20%; */
+    background: #F4F4F4;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #354052;
+    border: none;
+    opacity: .7;
+}
+
+#get .content-get .list-item div:last-child button{
+    width: 194px;
+    height: 52px;
+    margin: 20px 291px 39px;
+    border-radius: 3px;
+    background-color: #6195FF;
+    border: none;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}

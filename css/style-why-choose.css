@@ -1,0 +1,169 @@
+#why-choose{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#why-choose footer{
+    background-image:url(../images/background/background2.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -6;
+}
+/* #why-choose .pkg{
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    z-index: -6; 
+} */
+.why{
+    overflow: hidden;
+    background-color: #FAFAFA;
+    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
+    height: 696px;
+}
+.why img{
+    width: 555px;
+    height: 417px;
+    padding: 120px 15px 0px ;
+    position: relative;
+}
+/* creat angle img */
+.why .angle{
+    position: absolute;
+    height: 417px;
+    align-items: center;
+    top: 121px;
+    left: 953px;
+    display: flex;
+    flex-direction: row;
+    opacity: .0;
+    transition: all;
+    transition-duration:1s;
+}
+.why .angle:hover{
+    opacity: .9;
+}
+/* creat point img */
+.why .point{
+    display: flex;
+    justify-content: center;
+    width: 555px;
+    padding-left: 15px;
+}
+.why .point div{
+    width: 12px;
+    height: 12px;
+    background-color: #EEE;
+    border-radius: 50%;
+    margin: 10px ;
+    transition: all 1s;
+    transition-timing-function:ease ;
+}
+/* .why .point div:first-child{
+    width: 22px;
+    border-radius: 40%;
+    background-color: #6195FF;
+} */
+.why .point div:hover{
+    width: 22px;
+    border-radius: 40%;
+    background-color: #6195FF;
+}
+/* .why .point div:active{
+    width: 22px;
+    border-radius: 40%;
+    background-color: #6195FF;
+} */
+
+
+.why .angle div{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #6195FF;
+    margin-left: 455px;  
+}
+.why .angle div:first-child{
+    margin-left: 0;
+}
+
+.why .angle div i{
+    color: white;
+    margin: 15px 20px;
+}
+
+.content-why{
+    width: 557px;
+    height: 378px;
+    color: #868F9B;
+    float: left;
+    margin: 120px 0 120px 366px;
+    padding-left: 15px;
+    position: relative;
+}
+.content-why h2{
+    text-align: left;
+}
+.content-why h2::before{
+    left: 0px;
+}
+.content-why p:first-of-type{
+    margin-top: -10px;  
+}
+.content-why p:nth-child(n+3){
+     padding-left: 40px;
+}
+.content-why i{
+    font-size: 20px;
+    color: #6195FF;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #6195FF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -3px;
+}
+#why-choose footer {
+    height: 282px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    padding: 0 366px;
+    align-items: center;
+}
+/* creat div black */
+#why-choose footer::before {
+    content: "";
+    width: 1902px;
+    height: 282px;
+    background-color: #1C1D21;
+    opacity: .8;
+    position: absolute;
+}
+#why-choose footer div{
+    width: 262px;
+    height: 131px;
+    padding: 10px;
+    z-index: 1;
+}
+#why-choose footer div i{
+    font-size: 30px;
+    color: #6195FF;
+    text-align: center;
+    display: block;
+}
+#why-choose footer div h3{
+    font-weight: 700;
+    color: white;
+    font-size: 36px;
+}
+#why-choose footer div p{
+    text-align: center;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+}
+

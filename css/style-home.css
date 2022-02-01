@@ -1,6 +1,13 @@
 @import url("style-about.css");
 @import url("style-Portfolio.css");
 @import url("style-Services.css");
+@import url("style-why-choose.css");
+@import url("style-prices.css");
+@import url("style-team.css");
+@import url("style-Recents.css");
+@import url("style-get.css");
+@import url("style-footer.css");
+
 body{
     font-family: 'Varela Round', sans-serif;
     font-size: 16px;
